@@ -1,5 +1,5 @@
 // Service site keeps track of which sites to monitor.
-package site
+package db
 
 import (
 	"encore.dev/storage/sqldb"
