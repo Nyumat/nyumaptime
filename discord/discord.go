@@ -43,7 +43,7 @@ func Notify(ctx context.Context, p *NotifyParams) error {
     return nil
 }
 
-var _ = pubsub.NewSubscription(monitor.TransitionTopic, "slack-notification", pubsub.SubscriptionConfig[*monitor.TransitionEvent]{
+var _ = pubsub.NewSubscription(monitor.TransitionTopic, "discord-msg", pubsub.SubscriptionConfig[*monitor.TransitionEvent]{
 	Handler: func(ctx context.Context, event *monitor.TransitionEvent) error {
 		// Compose message
 		msg := fmt.Sprintf("😨 *%s is down!*", event.Site.URL)
