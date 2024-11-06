@@ -33,6 +33,7 @@ The application is built using [Encore](https://encore.dev), a platform for buil
 - **Pub/Sub**: A Pub/Sub topic to broadcast messages when a website goes down or comes back up
 - **Cron Jobs**: A cron job that checks all websites every 1 hour
 - **Secrets**: A secret to store the Discord webhook URL
+- **Auth**: An auth provider to authenticate users to add/remove websites
 
 ## Getting Started
 
