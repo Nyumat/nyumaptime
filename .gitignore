@@ -2,3 +2,5 @@
 encore.gen.go
 encore.gen.cue
 /encore.gen
+frontend/dist
+frontend/src/
