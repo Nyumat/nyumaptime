@@ -1,7 +1,7 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { DateTime } from "luxon";
 import React, { FC, useEffect, useState } from "react";
 import Client, { monitor, site } from "./client";
-import { DateTime } from "luxon";
 
 const client = new Client(window.location.origin);
 
@@ -10,7 +10,7 @@ function App() {
     <>
       <div className="min-h-full container px-4 mx-auto my-16">
         <h2 className="text-2xl font-bold leading-7 text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">
-          Uptime Monitoring
+          Nyumat's Website Monitor
         </h2>
 
         <main className="pt-8 pb-16">
@@ -59,12 +59,10 @@ const SiteList: FC = () => {
     <>
       <div className="sm:flex sm:items-center">
         <div className="sm:flex-auto">
-          <h1 className="text-xl font-semibold text-gray-900">
-            Monitored Websites
-          </h1>
+          <h1 className="text-xl font-semibold text-gray-900">My Websites</h1>
           <p className="mt-2 text-sm text-gray-700">
-            A list of all the websites being monitored, their current status,
-            and when they were last checked.
+            A list of all my websites being monitored, their current status, and
+            when they were last checked.
           </p>
         </div>
         <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
